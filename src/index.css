@@ -1,0 +1,114 @@
+/* ELEMENT STYLES -------------------- */
+body {
+  background: #e8e7e7; 
+  font-family: arial;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  color: #FFF;
+  align-items: center;
+  background-color: black;
+  border-bottom: solid 2px tomato;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+#headerItem {
+  padding: 0 20px;
+}
+
+#headerGreeting {
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+/* FORMS */
+form {
+  display: flex;
+  background-color: rgb(85, 54, 54);
+}
+
+input {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 15px 10px 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  border-style: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input::-webkit-input-placeholder{
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+input:focus{
+  background-color: rgba(rgb(121, 121, 121));
+}
+
+input[type=submit] {
+  display: block;
+  font-size: .6em;
+  margin: 15px 15px 15px 0; 
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button, 
+input[type=submit] {
+  outline: none;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+/* COMPONENT STYLES -------------------- */
+.main {
+  background: #fff;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+}
+
+#cardsSection {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+}
+
+
+
+
+
