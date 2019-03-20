@@ -72,7 +72,7 @@ class App extends Component {
       <div className="main">
         
         <Header 
-          title="No Cheat Day" 
+          title="Focus Cards" 
           date = {new Date().getDate()}
           year = {new Date().getFullYear()}
           totalTask={this.state.customCards.length + this.state.cards.length} 

@@ -1,8 +1,8 @@
 {
-  "name": "no-cheat-day",
+  "name": "focus-cards",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://myname.github.io/focus-cards",
+  "homepage" : "http://AMTenorio.github.io/focus-cards",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
