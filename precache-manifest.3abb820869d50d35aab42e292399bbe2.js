@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/focus-cards/static/js/runtime~main.c90ef1aa.js"
   },
   {
-    "revision": "72d9ecc19f4401237fc7",
-    "url": "/focus-cards/static/js/main.5ef2265d.chunk.js"
+    "revision": "0bed6c8798b4ff65eab8",
+    "url": "/focus-cards/static/js/main.3addd63b.chunk.js"
   },
   {
     "revision": "f1e58027e70ca4be5b2b",
     "url": "/focus-cards/static/js/2.35bc16c8.chunk.js"
   },
   {
-    "revision": "72d9ecc19f4401237fc7",
+    "revision": "0bed6c8798b4ff65eab8",
     "url": "/focus-cards/static/css/main.aebecd1f.chunk.css"
   },
   {
-    "revision": "c62fe8487c333a4daf1f40f434d881c9",
+    "revision": "e07954e1d950b690f5a1d25ee895d760",
     "url": "/focus-cards/index.html"
   }
 ];

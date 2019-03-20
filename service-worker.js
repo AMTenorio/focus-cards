@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/focus-cards/precache-manifest.6124f1a66658db8becd29e5c97c307a1.js"
+  "/focus-cards/precache-manifest.3abb820869d50d35aab42e292399bbe2.js"
 );
 
 workbox.clientsClaim();
