@@ -1,14 +1,14 @@
 {
-  "main.css": "/focus-cards/./static/css/main.aebecd1f.chunk.css",
-  "main.js": "/focus-cards/./static/js/main.5ef2265d.chunk.js",
-  "main.js.map": "/focus-cards/./static/js/main.5ef2265d.chunk.js.map",
-  "runtime~main.js": "/focus-cards/./static/js/runtime~main.bbe237d2.js",
-  "runtime~main.js.map": "/focus-cards/./static/js/runtime~main.bbe237d2.js.map",
-  "static/js/2.35bc16c8.chunk.js": "/focus-cards/./static/js/2.35bc16c8.chunk.js",
-  "static/js/2.35bc16c8.chunk.js.map": "/focus-cards/./static/js/2.35bc16c8.chunk.js.map",
-  "index.html": "/focus-cards/./index.html",
-  "precache-manifest.0dadb8c3ee3ce8527566afa652a815a4.js": "/focus-cards/./precache-manifest.0dadb8c3ee3ce8527566afa652a815a4.js",
-  "service-worker.js": "/focus-cards/./service-worker.js",
-  "static/css/main.aebecd1f.chunk.css.map": "/focus-cards/./static/css/main.aebecd1f.chunk.css.map",
-  "static/media/Alarm.mp3": "/focus-cards/./static/media/Alarm.9391f1fe.mp3"
+  "main.css": "/static/css/main.aebecd1f.chunk.css",
+  "main.js": "/static/js/main.5ef2265d.chunk.js",
+  "main.js.map": "/static/js/main.5ef2265d.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.35bc16c8.chunk.js": "/static/js/2.35bc16c8.chunk.js",
+  "static/js/2.35bc16c8.chunk.js.map": "/static/js/2.35bc16c8.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.4004b53d4e62202872c3702fa9925f40.js": "/precache-manifest.4004b53d4e62202872c3702fa9925f40.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.aebecd1f.chunk.css.map": "/static/css/main.aebecd1f.chunk.css.map",
+  "static/media/Alarm.mp3": "/static/media/Alarm.9391f1fe.mp3"
 }
