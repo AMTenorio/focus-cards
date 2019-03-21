@@ -7,7 +7,7 @@ const FeatureCards = (props) => {
     
         return (
             <div className = "card">
-               <span>
+               <span id="cardInfo">
                 <h2>{props.title}</h2> 
                 <p>{props.desc}</p>
                 <p>{props.time.toString()} min</p>

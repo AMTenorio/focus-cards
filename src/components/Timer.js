@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import soundfile from '../sound/Alarm.mp3'
+import soundfile from '../sound/Alarm_Clock.mp3'
 
 class Timer extends Component {
     
@@ -9,6 +9,7 @@ class Timer extends Component {
         minutes: '',
         seconds: 0,
         totalMinutes: 0,
+        totalSecondsCounter: 0,
         timeRemaining: 0,
         totalSeconds: 0,
         sound: new Audio(soundfile),
@@ -33,6 +34,7 @@ class Timer extends Component {
         if (this.state.isRunning){
             this.setState(state => ({
                 seconds: state.seconds + 1,
+                totalSecondsCounter: state.totalSecondsCounter + 1,
                 totalSeconds: this.props.totalTime * 60,
                 timeRemaining: 100 / this.state.totalSeconds,
               }));
@@ -93,7 +95,7 @@ class Timer extends Component {
         style = {{
           display: 'flex',
           flexDirection: 'column',
-          maxWidth: '25%',
+          maxWidth: '100%',
           alignContent: 'stretch',
           flexWrap: 'wrap',
           }}
@@ -102,7 +104,7 @@ class Timer extends Component {
             
             <h1>{this.props.time}</h1>
           <button onClick={this.handleTimer}>{this.state.isRunning? 'Stop Task': 'Start Task'}</button>
-          <h3>Total Time Remaining: {this.props.totalTime - this.state.totalMinutes} Minutes</h3>
+          <h4>Total Time Remaining: {this.props.totalTime - this.state.totalMinutes} Min</h4>
           
           <span>
           <h3>{this.state.status}</h3>
@@ -118,7 +120,7 @@ class Timer extends Component {
             maxHeight: '5px',
             // width: this.props.totalTime + 'vw',
             // borderLeft:  this.state.seconds  + 'px solid red',
-            maxWidth: 100 - this.state.timeRemaining * this.state.seconds  + '%',
+            maxWidth: 100 - this.state.timeRemaining * this.state.totalSecondsCounter  + '%',
             }}>.</span>
         </div>
 

@@ -11,12 +11,19 @@ class AddCardForm extends Component {
         handleValueChange = (e) => {
             this.setState({ 
                 [e.target.name]: e.target.value 
-            });
+            }); 
         }
 
+        
         handleSubmit = (e) => {
-            e.preventDefault();
-            this.props.addCards(this.state.title, this.state.time);   
+          e.preventDefault();
+          if (this.state.title === '' || this.state.time === ''){
+          alert('Please enter something')
+          } else {
+
+         
+              this.props.addCards(this.state.title, this.state.time)
+          }
         }
 
 

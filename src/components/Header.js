@@ -24,7 +24,7 @@ const Header = (props) => {
         </div>
         <div id="headerGreeting">
         <span>
-          <h2>{greetings}</h2>
+          <h3>{greetings}</h3>
         </span>
         </div>
       </header>

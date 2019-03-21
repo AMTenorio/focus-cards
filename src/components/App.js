@@ -79,7 +79,7 @@ class App extends Component {
         />
         <div id="cardsSection">
         
-        <h1>Feature Task Cards</h1>
+        <h1>Feature Focus Cards</h1>
         {this.state.cards.map( card  =>
             <FeatureCards 
             title={card.title}

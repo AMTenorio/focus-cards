@@ -35,7 +35,9 @@ li {
 /* FORMS */
 form {
   display: flex;
+  flex-wrap: wrap;
   background-color: rgb(85, 54, 54);
+  justify-content: space-evenly;
 }
 
 input {
@@ -65,7 +67,7 @@ input:focus{
 input[type=submit] {
   display: block;
   font-size: .6em;
-  margin: 15px 15px 15px 0; 
+  margin: 15px 15px 15px 15px; 
   padding: 10px;
   background-color: red;
   border-radius: 5px;
@@ -96,17 +98,23 @@ input[type=submit] {
 }
 
 #cardsSection {
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .card {
+  width: 100%;
   display: flex;
   align-items: stretch;
   padding: 10px;
+  margin: 0 auto;
   justify-content: space-between;
   border-bottom: 2px solid grey;
+  flex-wrap: wrap;
 }
+
+
 
 
 
