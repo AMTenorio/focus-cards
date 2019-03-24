@@ -108,11 +108,15 @@ input[type=submit] {
   width: 100%;
   display: flex;
   margin: 10px auto;
-  padding: 10px 0;
+  padding: 10px;
   justify-content: space-between;
   border-bottom: 2px solid grey;
   flex-wrap: wrap;
 }
+
+
+
+
 
 
 

@@ -3,6 +3,9 @@ import FeatureCards from './FeatureCards.js'
 import Header from './Header.js'
 import CustomCards from './CustomCards'
 import AddCardForm from './AddCardForm'
+import weightsImage from '../images/weights.png'
+import runningImage from '../images/running.png'
+import readingImage from '../images/reading.png'
 
 
 class App extends Component {
@@ -10,30 +13,33 @@ class App extends Component {
 
     cards: [
       {
-        title: 'Get Your Run On',
+        title: 'Get Some Cardio',
         desc: 'Run outside for 4 miles within 30 minutes',
         time: 30,
         status: '',
+        image: runningImage,
         id:1
       },
       {
-        title: '100 Push Ups a Day',
+        title: 'Strengthen your Body',
         desc: 'Perform 100 push ups a day',
         time: 2,
         status: '',
+        image: weightsImage,
         id:2
       },
       {
         title: 'Things for your Brain',
-        desc: 'Read a book for an hour',
+        desc: 'Read something educational for an hour',
         time: 30,
         status: '',
+        image: readingImage,
         id:3
       }
     ],
 
     customCards: [
-      
+  
     ]
   };
  // Custom Task Card Id
@@ -67,9 +73,6 @@ class App extends Component {
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let date = new Date();
     let day = days[date.getDay()];
-
-
-      
   
     return (
       <div className="main">
@@ -87,6 +90,7 @@ class App extends Component {
             desc={card.desc}
             time ={card.time}
             status ={card.status}
+            image = {card.image}
             key={card.id}
           />
           
@@ -97,13 +101,15 @@ class App extends Component {
 
         {this.state.customCards.map (
           customCards => 
-          <CustomCards
+          
+          <CustomCards 
           title={customCards.title}
           time={customCards.time}
           id = {customCards.id}
           key={customCards.id} 
           removeCards={this.handleRemoveCard}
         />
+    
         )}
 
         <AddCardForm
