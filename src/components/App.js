@@ -4,6 +4,7 @@ import Header from './Header.js'
 import CustomCards from './CustomCards'
 import AddCardForm from './AddCardForm'
 
+
 class App extends Component {
   state = {
 
@@ -38,12 +39,6 @@ class App extends Component {
  // Custom Task Card Id
   prevCardId = 0;
 
-  handleScoreChange = (index, delta) => {
-    this.setState( prevState => ({
-      score: prevState.players[index].score += delta
-    }));
-  }
-
   // Add custom task cards
   handleAddCard = ( title, time) => {
       this.setState({
@@ -68,18 +63,24 @@ class App extends Component {
   }
 
   render() {
+    
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let date = new Date();
+    let day = days[date.getDay()];
+
+
+      
+  
     return (
       <div className="main">
         
         <Header 
           title="Focus Cards" 
-          date = {new Date().getDate()}
-          year = {new Date().getFullYear()}
           totalTask={this.state.customCards.length + this.state.cards.length} 
         />
         <div id="cardsSection">
         
-        <h1>Friday Focus Cards</h1>
+        <h1>{day} Focus Cards</h1>
         {this.state.cards.map( card  =>
             <FeatureCards 
             title={card.title}

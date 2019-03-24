@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 const Header = (props) => {
   let greetings = ""
   
@@ -24,7 +23,7 @@ const Header = (props) => {
         </div>
         <div id="headerGreeting">
         <span>
-          <h5>{greetings}</h5>
+          <h4>{greetings}</h4>
         </span>
         </div>
       </header>

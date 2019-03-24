@@ -9,6 +9,7 @@ class Timer extends Component {
         minutes: '',
         seconds: 0,
         totalMinutes: 0,
+        totalHours: 0,
         totalSecondsCounter: 0,
         timeRemaining: 0,
         totalSeconds: 0,
@@ -67,7 +68,7 @@ class Timer extends Component {
         this.setState(state => ({
           totalMinutes: 0,
           isRunning: false,
-          status:'Task Complete'
+          status:'Complete'
         }));
 
         alert('This task is done');
@@ -108,11 +109,11 @@ class Timer extends Component {
           
           <span>
           <h3>{this.state.status}</h3>
-            <h4>{this.state.hours} hrs
+            <h4>{this.state.totalHours} hrs
             <span> </span>
-            {this.state.minutes} min
+            {this.state.totalMinutes} min
             <span > </span>
-            {this.state.seconds} sec</h4>
+            {this.state.seconds} sec </h4>
           </span>
           <span style = {{
             color: 'green',
